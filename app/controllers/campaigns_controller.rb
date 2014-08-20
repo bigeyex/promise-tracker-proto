@@ -130,7 +130,7 @@ class CampaignsController < ApplicationController
   private
 
   def campaign_params
-    params.require(:campaign).permit(:title, :goal, :theme, :data_collectors, :submissions_target, :audience)
+    params.require(:campaign).permit(:title, :meta, :goal, :theme, :data_collectors, :submissions_target, :audience)
   end
 
 end

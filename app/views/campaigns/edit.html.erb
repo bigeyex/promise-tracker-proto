@@ -14,9 +14,9 @@
 <div id="campaign-goals-form" class="single-page">
   <div class="row">
     <div class="col-sm-4 block">
-      <div class="form-group">
-        <%= f.label :theme, class: "block" %>
-        <%= f.select :theme, campaign_themes, {}, { class: "form-control" } %> 
+      <div class="form-group"> 
+        <%= f.label :theme %>
+        <%= f.number_field :meta, min: 1, max: 123, autofocus: true, required: true, class: "form-control" %>
       </div>
     </div>
   </div>

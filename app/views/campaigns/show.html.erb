@@ -1,5 +1,5 @@
 <div class="campaign-title">
-  <%= @campaign.title %>
+  <%= Campaign.human_attribute_name(:meta) %> <%= @campaign.meta %>: <%= @campaign.title %>
 </div>
 <% if @campaign.status != "draft" %>
 <%= render partial: 'nav' %>

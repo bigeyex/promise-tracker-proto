@@ -7,12 +7,12 @@
       <%= form_for @campaign do |f| %>
       <div class="modal-body">
         <div class="form-group">
-          <%= f.label :theme, t(".campaign_theme") %>
-          <%= f.select :theme, campaign_themes, {}, { class: "form-control" } %> 
+          <%= f.label :theme, t(".campaign_meta") %>
+          <%= f.number_field :meta, min: 1, max: 123, autofocus: true, required: true, class: "form-control" %> 
         </div>
         <div class="form-group">
           <%= f.label :tile, t(".campaign_title") %>
-          <%= f.text_field :title, class: "form-control", autofocus: true, required: true %>
+          <%= f.text_field :title, class: "form-control", required: true %>
         </div>  
       </div>
       <div class="modal-footer">
